@@ -1,0 +1,11 @@
+= f.fields_for :account do |fields|
+  = fields.input :personal_website, :label => '个人网站'
+  = fields.input :location, :label => '所在地'
+  = fields.input :signature, :label => '签名', :input_html => {:class => :span4}
+  = fields.input :introduction, :label => '个人简介', :input_html => {:rows => 5, :class => :span4}
+  %hr
+  = fields.input :weibo_link, :label => '微博地址', :input_html => {:class => :span4}
+  = fields.input :twitter_uid, :label => 'Twitter'
+  = fields.input :github_uid, :label => 'Github ID'
+  = fields.input :dribbble_uid, :label => 'Dribbble ID'
+

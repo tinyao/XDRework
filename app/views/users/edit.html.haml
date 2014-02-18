@@ -1,0 +1,36 @@
+.box
+  .cell
+    = build_navigation(['设置'])
+  .inner
+    = render 'account_form', :btn_class => 'btn btn-small'
+
+%a{:name => :avatar} &nbsp;
+.box
+  .box-header
+    头像
+  = simple_form_for @user, :url => update_avatar_path, :html => {:multipart => true, :class => 'edit_user form-horizontal'} do |f|
+    .cell
+      .control-group
+        .control-label 当前头像
+        .controls
+          = large_avatar(current_user)
+          &nbsp;
+          = medium_avatar(current_user)
+          &nbsp;
+          = mini_avatar(current_user)
+    .inner
+      = f.input :avatar, :label => '选择图片文件'
+      .form-actions
+        = f.submit '上传新头像', :class => 'btn btn-small btn-primary'
+        %span.help-block 1. 推荐使用正方形的透明 PNG 图片以获得最佳效果。
+        %span.help-block 2. 禁止使用任何低俗或者敏感图片作为头像
+        %span.help-block 3. 如果你是男的，请不要用女人的照片作为头像，这样可能会对其他会员产生误导
+
+
+
+.box
+  .box-header
+    修改密码
+  .inner
+    = render 'users/password_form', :btn_class => 'btn btn-small'
+
