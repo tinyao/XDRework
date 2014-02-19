@@ -1,9 +1,13 @@
 # encoding: utf-8
 class UsersController < ApplicationController
-  before_filter :authenticate_user!, :except => [:show, :topics]
+  before_filter :authenticate_user!, :except => [:show, :topics, :index]
 
   def index
-    @users = User.all # getting all the users!
+    @users = User.all
+    respond_to do |format|
+      format.html
+      format.mobile
+    end
   end
 
   def show

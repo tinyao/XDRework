@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
   ]
 
   attr_accessible *BASE_FIELDS
-  attr_accessible *(BASE_FIELDS + [:reward]), :as => :admin
+  attr_accessible *(BASE_FIELDS + [:reward]) , :as => :admin
 
   mount_uploader :avatar, AvatarUploader
 

@@ -1,6 +1,7 @@
 Rabel::Application.routes.draw do
   devise_for :users, :controllers => {:sessions => "sessions", :registrations => "registrations"}
   get 'settings' => 'users#edit'
+  get 'members' => 'users#index'
   get 'member/:nickname' => 'users#show', :as => :member
   get 'member/:nickname/topics' => 'users#topics', :as => :member_topics
   post 'member/:nickname/follow' => 'users#follow', :as => :follow_user

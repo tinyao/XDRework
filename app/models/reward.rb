@@ -19,6 +19,10 @@ class Reward < ActiveRecord::Base
   before_create :set_balance
   after_create :notify_user
 
+  def update_balance
+    self.balance = self.amount + 5
+  end
+
   private
     def set_amount
       if self.reward_type == TYPE_GRANT

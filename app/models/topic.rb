@@ -21,6 +21,7 @@ class Topic < ActiveRecord::Base
   attr_accessible :title, :content, :comments_closed, :sticky, :as => :admin
 
   after_create :send_notifications
+  after_save :update_rewards
 
   def last_comment
     self.comments.order('created_at ASC').last
@@ -111,6 +112,10 @@ class Topic < ActiveRecord::Base
           self.content
         )
       end
+    end
+
+    def update_rewards
+      #self.user.reward.update_balance
     end
 
 end
