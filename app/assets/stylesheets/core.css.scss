@@ -58,6 +58,10 @@ td.avatar {
   width: 48px;
 }
 
+.medium_avatar, .large_avatar, .small_avatar{
+    border-radius: 40px;
+}
+
 .fr { float: right; }
 
 .node .fr {
@@ -118,6 +122,9 @@ a.action_label:hover {
   }
 }
 
+.new-topic-btn {
+    float:right;
+}
 
 @media (max-width: 767px) {
   #wrap {
@@ -211,7 +218,7 @@ img.external {
   width: auto;
   height: auto;
   margin-bottom: 10px;
-  max-width: 570px;
+  max-width: 100%;
 }
 
 .fileupload-btn {
@@ -303,3 +310,8 @@ ul.nav li {
     font-size: 13px;
 }
 
+.avatar img {
+    border-radius: 30px;
+    width: 48px;
+    height: 48px;
+}

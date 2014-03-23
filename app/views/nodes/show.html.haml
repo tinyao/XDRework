@@ -29,9 +29,8 @@
       .sep10
       %span.gray= @node.introduction
     - if user_signed_in?
+      = link_to '创建新话题', '#new_topic', :class => 'btn btn-success new-topic-btn'
       .sep10
-      = link_to '创建新话题', '#new_topic', :class => 'btn btn-success'
-      .sep5
   = render @topics
   .inner
     = render 'paginator'
