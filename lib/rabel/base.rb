@@ -59,7 +59,7 @@ module Rabel
     end
 
     def self.embed_video(url)
-      %(<embed src="#{url}" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="false" wmode="opaque" width="480" height="400" quality="high" align="middle"></embed>)
+      %(<div class="embed-container"><iframe src="#{url}" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="false" wmode="opaque" quality="high" align="middle" frameborder="0"></iframe></div>)
     end
 
     def self.embed_music(url, width, height)
