@@ -19,7 +19,7 @@ RABEL_MEMCACHED_NAMESPACE: 'example'
 # 又拍云存储(www.upyun.com)配置
 
 # 修改为 'on'，开启图片上传功能
-RABEL_UPYUN_SWITCH: 'on'
+RABEL_UPYUN_SWITCH: 'off'
 
 # 操作员名称
 RABEL_UPYUN_OP_NAME: 'tinyao'

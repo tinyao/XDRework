@@ -22,6 +22,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'execjs'
 gem 'therubyracer'
+gem 'qiniu', '~> 6.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

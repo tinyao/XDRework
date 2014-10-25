@@ -12,7 +12,7 @@ module Redcarpet
           result = CodeRay.scan(code, language || :text).div(:tab_width => 2).sub("\n", '')
           i = result.rindex("\n")
           result = result[0..i-1] + result[i+1..-1]
-          Rabel::Base.protect_at_symbol result.gsub("\n", "<br/>")
+          Rabel::Base.protect_at_symbol result.gsub("\n", "<br>")
         rescue Exception => e
           "~~~~#{Rabel::Base.h language}#{Rabel::Base.h code}"
         end

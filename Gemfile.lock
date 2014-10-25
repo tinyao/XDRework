@@ -141,6 +141,11 @@ GEM
     nokogiri (1.5.9)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
+    qiniu (6.2.4)
+      json (~> 1.7)
+      mime-types (~> 1.19)
+      rest-client (~> 1.6)
+      ruby-hmac (~> 0.4)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rabel-meta (1.5)
@@ -192,6 +197,7 @@ GEM
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
       rspec-mocks (~> 2.12.0)
+    ruby-hmac (0.4.0)
     rubyzip (1.0.0)
     sass (3.2.9)
     sass-rails (3.2.6)
@@ -281,6 +287,7 @@ DEPENDENCIES
   kgio
   mime-types
   mysql2
+  qiniu (~> 6.2.1)
   quiet_assets (~> 1.0.1)
   rabel-meta (= 1.5)
   rails (= 3.2.16)
