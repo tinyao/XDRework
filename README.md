@@ -1,16 +1,8 @@
-## Rabel
+西电创意交流社区
 
-基于 Ruby on Rails 框架开发的开源论坛系统。
-
-## 理念
-
-去掉一切繁杂功能，让论坛回归交流本质。
+感谢基于 Ruby on Rails 的 [Rabel](https://github.com/daqing/rabel) 的开源论坛系统；感谢 [V2EX](http://v2ex.com) 创造了这样一种简单纯粹的论坛形式
 
 ## 授权协议
 
 采用[MIT](http://opensource.org/licenses/MIT)开源协议授权。
-
-## 致谢
-
-Rabel 论坛系统受到[Project Babel 2](https://github.com/livid/v2ex)启发，特此感谢。
 
