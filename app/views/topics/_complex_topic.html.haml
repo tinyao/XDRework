@@ -2,7 +2,7 @@
 - last_replied_by = topic.last_replied_by
 .cell.topic{:class => topic_user.can_manage_site? ? 'admin' : ''}
   .avatar.pull-left
-    = user_profile_avatar_link(topic_user, :medium)
+    = user_profile_avatar_link(topic_user, :large)
   .item_title
     - if comments_count > 0
       .pull-right

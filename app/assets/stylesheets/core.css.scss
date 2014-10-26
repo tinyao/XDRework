@@ -234,7 +234,7 @@ img.external {
     font-size: 23px;
     direction: ltr;
     cursor: pointer;
-
+    width: 120px;
   }
 }
 
@@ -292,9 +292,9 @@ ul.nav li {
 
         li {
             float: left;
-            padding: 10px 15px 10px 15px;
+            padding: 10px 5px 10px 5px;
             text-align: center;
-            width: 70px;
+            width: 90px;
 
             img {
                 width: 48px;
@@ -302,7 +302,7 @@ ul.nav li {
             }
 
             .name {
-                max-width: 70px;
+                max-width: 90px;
             }
         }
     }
